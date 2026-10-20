@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="Zásady ochrany osobních údajů pro soukromého osobního AI asistenta Agent007.">
+  <title>Zásady ochrany osobních údajů – Agent007</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Agent007 – úvodní stránka">Agent007</a>
+    <nav aria-label="Hlavní navigace">
+      <a href="/">O službě</a>
+      <a href="/privacy/" aria-current="page">Ochrana údajů</a>
+    </nav>
+  </header>
+
+  <main class="document">
+    <p class="eyebrow">Veřejné informace</p>
+    <h1>Zásady ochrany osobních údajů</h1>
+    <p class="metadata"><strong>Účinnost:</strong> ode dne zveřejnění webu na ai.taxifa.cz</p>
+
+    <section>
+      <h2>1. Rozsah a účel</h2>
+      <p>Agent007 je neveřejný osobní AI asistent provozovaný pro jednoho uživatele. Není nabízen veřejnosti, neumožňuje registraci dalších uživatelů a neposkytuje veřejný přístup k účtu Google, interním službám ani datům uživatele.</p>
+      <p>Tyto zásady popisují, jak Agent007 zachází s údaji získanými prostřednictvím Google API. Veřejný web ai.taxifa.cz sám žádná osobní data neshromažďuje.</p>
+    </section>
+
+    <section>
+      <h2>2. Google data, ke kterým může Agent007 přistupovat</h2>
+      <h3>Gmail</h3>
+      <p>Metadata zpráv, odesílatelé a příjemci, předměty, úryvky a textový obsah zpráv, identifikátory zpráv a vláken a informace o štítcích či stavu zprávy.</p>
+      <h3>Google Calendar</h3>
+      <p>Údaje o událostech v primárním kalendáři, zejména názvy, termíny a časy. Agent007 může na pokyn uživatele vytvořit novou událost.</p>
+      <h3>Google Sheets</h3>
+      <p>Metadata a hodnoty v tabulkách, které uživatel určí. Na základě potvrzeného požadavku může Agent007 tabulku vytvořit, zapsat nebo přidat hodnoty a přidat nový list.</p>
+      <p>Agent007 používá pouze oprávnění potřebná pro tyto funkce. Nové oprávnění nebude přidáno bez nového výslovného souhlasu uživatele.</p>
+    </section>
+
+    <section>
+      <h2>3. Jak jsou Google data používána</h2>
+      <p>Data jsou používána pouze k provedení funkcí vyžádaných uživatelem, například k vyhledání a shrnutí e-mailů, přípravě návrhu odpovědi, sestavení přehledu, zobrazení kalendáře nebo práci s určenou tabulkou.</p>
+      <p>Operace měnící Gmail nebo Google Sheets vyžadují výslovné potvrzení uživatele. Vytvoření kalendářní události se provádí pouze na základě výslovného požadavku uživatele.</p>
+      <p>Google data nejsou prodávána, používána pro reklamu, reklamní profilování, hodnocení úvěruschopnosti ani zpřístupňována třetím stranám pro jejich vlastní marketingové účely.</p>
+    </section>
+
+    <section>
+      <h2>4. Technické zpracování a poskytovatelé</h2>
+      <p>Podle požadované úlohy mohou být nezbytné části dat technicky zpracovány těmito službami:</p>
+      <ul>
+        <li><strong>Google API</strong> pro přístup k Gmailu, Google Calendar a Google Sheets;</li>
+        <li><strong>soukromý server</strong>, na kterém běží Agent007 a jeho automatizace;</li>
+        <li><strong>nakonfigurovaný poskytovatel AI modelu</strong>, v současnosti OpenAI, pokud je zpracování obsahu nezbytné k vytvoření uživatelem požadovaného shrnutí, návrhu nebo odpovědi;</li>
+        <li><strong>Telegram</strong>, pokud uživatel zadá požadavek nebo si nechá doručit výsledek prostřednictvím této služby.</li>
+      </ul>
+      <p>Tito poskytovatelé jsou využíváni pouze k zajištění funkce požadované uživatelem. Agent007 nepoužívá Google data k trénování vlastního obecného AI modelu.</p>
+    </section>
+
+    <section>
+      <h2>5. Ukládání a zabezpečení</h2>
+      <p>OAuth pověření jsou uložena neveřejně na soukromém serveru v souborech s omezenými oprávněními operačního systému. Nejsou součástí veřejného webu ani veřejného zdrojového repozitáře.</p>
+      <p>Obsah načtený z Google služeb může být po dobu zpracování součástí konverzačního kontextu asistenta. Odvozené souhrny, strukturované údaje a provozní historie mohou být uloženy v historii asistenta, lokálních pracovních datech nebo v uživatelem určené tabulce Google Sheets. Provozní monitoring uchovává zejména technický stav, časy kontrol a chybové kódy; nemá za účel ukládat obsah Gmailu.</p>
+      <p>Přenos ke Google API a veřejnému webu probíhá přes HTTPS. Veřejný web není propojen s interními službami a nezpřístupňuje dashboard, agenty, API, protokoly ani uživatelská data.</p>
+    </section>
+
+    <section>
+      <h2>6. Doba uchování</h2>
+      <p>OAuth pověření se uchovávají do jejich nahrazení, odvolání nebo odstranění. Konverzační historie, odvozené souhrny, strukturované pracovní údaje a provozní záznamy mohou být uchovávány po dobu potřebnou pro osobní používání, návaznost úloh, bezpečnost, diagnostiku a zálohování. V současnosti není u všech těchto lokálních dat nastavena jednotná automatická doba výmazu.</p>
+      <p>Data uložená přímo v Gmailu, Google Calendar nebo Google Sheets se řídí nastavením a dobou uchování účtu Google.</p>
+    </section>
+
+    <section>
+      <h2>7. Odvolání přístupu a odstranění dat</h2>
+      <p>Uživatel může kdykoli <a href="https://myaccount.google.com/connections" rel="noreferrer">odvolat přístup</a> aplikace ke Google účtu. Tím se zabrání dalšímu přístupu, ale automaticky se neodstraní dříve vytvořené lokální souhrny nebo provozní historie.</p>
+      <p>Požadavek na odstranění dat může vlastník účtu uplatnit u provozovatele Agent007. Lze odstranit lokálně uložená OAuth pověření, konverzační historii a odvozená pracovní data v rozsahu, v jakém nejsou potřebná pro bezpečnostní záznamy nebo zákonné povinnosti. Pro kontakt bez zveřejnění osobních kontaktních údajů je zatím určen veřejný profil <a href="https://github.com/taxifa" rel="noreferrer">GitHub taxifa</a>; citlivá data se nemají vkládat do veřejných příspěvků.</p>
+    </section>
+
+    <section>
+      <h2>8. Cookies, analytika a veřejný web</h2>
+      <p>Web ai.taxifa.cz nepoužívá cookies, analytické nástroje, reklamní systémy, trackery, formuláře ani klientský JavaScript. Statické soubory poskytuje GitHub Pages, jehož infrastruktura může z bezpečnostních a provozních důvodů zpracovávat standardní síťové údaje, například IP adresu a čas požadavku.</p>
+    </section>
+
+    <section>
+      <h2>9. Google API Services User Data Policy</h2>
+      <p>Používání informací získaných z Google API se řídí <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>, včetně požadavků Limited Use.</p>
+    </section>
+
+    <section>
+      <h2>10. Změny těchto zásad</h2>
+      <p>Zásady budou aktualizovány, pokud se podstatně změní používané Google služby, účel zpracování, poskytovatelé nebo způsob uchování dat. Aktuální znění bude vždy zveřejněno na této adrese.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Agent007 · Soukromý osobní AI asistent</p>
+    <p><a href="/">Zpět na úvodní stránku</a></p>
+  </footer>
+</body>
+</html>
